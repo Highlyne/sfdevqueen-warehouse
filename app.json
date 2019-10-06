@@ -1,0 +1,25 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "description": "SFDC Heroku Connect Dev Project",
+  "env": {
+    "APP_KEY": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "sfdevqueen-warehouse",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
