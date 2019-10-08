@@ -18,7 +18,7 @@ class FeedbackController extends Controller
         //
         $sf_result = Feedback__c::get();
         $recordCount = count($sf_result);
-        return view('dash', compact('sf_result'));
+        return view('dash', compact('recordCount'));
     }
 
     /**

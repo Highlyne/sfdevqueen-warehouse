@@ -55,7 +55,7 @@
   
               <div class="info-box-content">
                 <span class="info-box-text">Total Survey Response</span>
-                <span class="info-box-number"></span>
+                <span class="info-box-number">{{$recordCount}}</span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -64,8 +64,6 @@
           <!-- /.col -->
         </div>
         <!-- /.row -->
-
-        <p>{{$sf_result}}</p>
 </section>  
 
 @endsection
