@@ -38,18 +38,18 @@ class FeedbackController extends Controller
     {
         // If there's a record for the email given update the record.
         // If not, create one.
-        $fdback = new Feedback__c;
+        $feedback = new Feedback__c;
         
-        $fdback->acctNum = $request->acctNum;
-        $fdback->name = $request->name;
-        $fdback->email = $request->email;
-        $fdback->answer1 = (int)$request->Q1;
-        $fdback->answer2 = (int)$request->Q2;
-        $fdback->answer3 = (int)$request->Q3;
-        $fdback->answer4 = (int)$request->Q4;
-        $fdback->answer5 = (int)$request->Q5;
+        $feedback->invite_number__c = $request->acctNum;
+        $feedback->name = $request->name;
+        $feedback->customer_email__c = $request->email;
+        $feedback->answer_1__c = (int)$request->Q1;
+        $feedback->answer_2__c = (int)$request->Q2;
+        $feedback->answer_3__c = (int)$request->Q3;
+        $feedback->answer_4__c = (int)$request->Q4;
+        $feedback->answer_5__c = (int)$request->Q5;
 
-        $fdback->save();
+        $feedback->save();
             
         
         return redirect('/');

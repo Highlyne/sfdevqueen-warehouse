@@ -15,14 +15,14 @@ class CreateFeedbackTable extends Migration
     {
         Schema::create('feedback__c', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('acctNum');
+            $table->integer('invite_number__c');
             $table->string('name');
-            $table->string('email');
-            $table->integer('answer1');
-            $table->integer('answer2');
-            $table->integer('answer3');
-            $table->integer('answer4');
-            $table->integer('answer5');
+            $table->string('customer_email__c');
+            $table->integer('answer_1__c');
+            $table->integer('answer_2__c');
+            $table->integer('answer_3__c');
+            $table->integer('answer_4__c');
+            $table->integer('answer_5__c');
             $table->timestamps();
         });
     }
