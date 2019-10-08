@@ -23,7 +23,7 @@
               <span class="info-box-icon bg-red"><i class="fa fa-fw fa-check"></i></span>
   
               <div class="info-box-content">
-                <span class="info-box-text">Question 1</span>
+                <span class="info-box-text">Question 1 Total Score</span>
                 <span class="info-box-number">{{$q1Count}}</span>
               </div>
               <!-- /.info-box-content -->
@@ -36,7 +36,7 @@
                   <span class="info-box-icon bg-red"><i class="fa fa-fw fa-truck"></i></span>
       
                   <div class="info-box-content">
-                    <span class="info-box-text">Question 2</span>
+                    <span class="info-box-text">Question 2 Total Score</span>
                     <span class="info-box-number">{{$q2Count}}</span>
                   </div>
                   <!-- /.info-box-content -->
@@ -49,7 +49,7 @@
                   <span class="info-box-icon bg-red"><i class="fa fa-fw fa-smile-o"></i></span>
       
                   <div class="info-box-content">
-                    <span class="info-box-text">Question 3</span>
+                    <span class="info-box-text">Question 3 Total Score</span>
                     <span class="info-box-number">{{$q3Count}}</span>
                   </div>
                   <!-- /.info-box-content -->
@@ -66,7 +66,7 @@
               <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
   
               <div class="info-box-content">
-                <span class="info-box-text">Question 4</span>
+                <span class="info-box-text">Question 4 Total Score</span>
                 <span class="info-box-number">{{$q4Count}}</span>
               </div>
               <!-- /.info-box-content -->
@@ -79,7 +79,7 @@
               <span class="info-box-icon bg-yellow"><i class="fa fa-fw fa-thumbs-up"></i></span>
   
               <div class="info-box-content">
-                <span class="info-box-text">Question 5</span>
+                <span class="info-box-text">Question 5 Total Score</span>
                 <span class="info-box-number">{{$q5Count}}</span>
               </div>
               <!-- /.info-box-content -->
