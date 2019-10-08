@@ -23,7 +23,7 @@ class CreateFeedbackTable extends Migration
             $table->integer('answer_3__c');
             $table->integer('answer_4__c');
             $table->integer('answer_5__c');
-            $table->timestamps();
+            
         });
     }
 
