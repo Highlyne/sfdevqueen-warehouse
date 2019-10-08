@@ -2,60 +2,85 @@
 
 @section('content')
 
-<h1>Admin Dashboard </h1>
+<h1 style="margin:20px;">Admin Dashboard </h1>
 <section class="content">
         <!-- Info boxes -->
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box">
-              <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
-  
-              <div class="info-box-content">
-                <span class="info-box-text">CPU Traffic</span>
-                <span class="info-box-number">90<small>%</small></span>
-              </div>
+        <div class="col-md-2 col-sm-12 col-xs-12">
+                <div class="info-box">
+                  <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+      
+                  <div class="info-box-content">
+                    <span class="info-box-text">Total Survey Response</span>
+                    <span class="info-box-number">{{$recordCount}}</span>
+                  </div>
               <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-2 col-sm-12 col-xs-12">
             <div class="info-box">
               <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
   
               <div class="info-box-content">
-                <span class="info-box-text">Likes</span>
-                <span class="info-box-number">41,410</span>
+                <span class="info-box-text">Question 1</span>
+                <span class="info-box-number">{{$q1Count}}</span>
               </div>
               <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
+          <div class="col-md-2 col-sm-12 col-xs-12">
+                <div class="info-box">
+                  <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+      
+                  <div class="info-box-content">
+                    <span class="info-box-text">Question 2</span>
+                    <span class="info-box-number">{{$q2Count}}</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+              </div>
+              <!-- /.col -->
+          <div class="col-md-2 col-sm-12 col-xs-12">
+                <div class="info-box">
+                  <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+      
+                  <div class="info-box-content">
+                    <span class="info-box-text">Question 3</span>
+                    <span class="info-box-number">{{$q3Count}}</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+              </div>
+              <!-- /.col -->
   
           <!-- fix for small devices only -->
           <div class="clearfix visible-sm-block"></div>
   
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-2 col-sm-12 col-xs-12">
             <div class="info-box">
               <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
   
               <div class="info-box-content">
-                <span class="info-box-text">Sales</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-text">Question 4</span>
+                <span class="info-box-number">{{$q4Count}}</span>
               </div>
               <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-2 col-sm-12 col-xs-12">
             <div class="info-box">
               <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
   
               <div class="info-box-content">
-                <span class="info-box-text">Total Survey Response</span>
-                <span class="info-box-number">{{$recordCount}}</span>
+                <span class="info-box-text">Question 5</span>
+                <span class="info-box-number">{{$q5Count}}</span>
               </div>
               <!-- /.info-box-content -->
             </div>

@@ -112,7 +112,9 @@
 
             {{-- Main Content --}}
             <main>
+                <div class="wrapper">
                 @yield('content')
+                </div>
             </main>
         </div>
     </body>

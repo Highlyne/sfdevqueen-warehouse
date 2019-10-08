@@ -18,7 +18,12 @@ class FeedbackController extends Controller
         //
         $sf_result = Feedback__c::get();
         $recordCount = count($sf_result);
-        return view('dash', compact('recordCount'));
+        $q1Count = Feedback__c::sum('answer_1__c');
+        $q2Count = Feedback__c::sum('answer_2__c');
+        $q3Count = Feedback__c::sum('answer_3__c');
+        $q4Count = Feedback__c::sum('answer_4__c');
+        $q5Count = Feedback__c::sum('answer_5__c');
+        return view('dash', compact('recordCount', 'q1Count', 'q2Count', 'q3Count', 'q4Count', 'q5Count'));
     }
 
     /**
