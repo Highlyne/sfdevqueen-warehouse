@@ -48,16 +48,25 @@
                     <!-- Header Navbar: style can be found in header.less -->
                     <nav class="navbar navbar-static-top">
                         <!-- Sidebar toggle button-->
-                        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        {{-- <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        </a>
+                        </a> --}}
                     
                         <div class="navbar-custom-menu">
                             <ul class="nav navbar-nav">
-                                <!-- Authentication Links -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Survey</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/dash">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://github.com/Highlyne/sfdevqueen-warehouse" target="_blank">GitHub</a>
+                                </li>
+                                {{-- <!-- Authentication Links -->
                                 @guest
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('login') }}">{{ __('Admin') }}</a>
@@ -67,11 +76,11 @@
                                             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                         </li>
                                     @endif
-                                @else
+                                @else --}}
                                     
                                     
                                         <!-- User Account: style can be found in dropdown.less -->
-                                <li class="dropdown user user-menu">
+                                {{-- <li class="dropdown user user-menu">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         
                                         <span class="hidden-xs">{{ Auth::user()->name }} <span class="caret"></span></span>
@@ -104,7 +113,7 @@
                                         
                                     </ul>
                                 </li>
-                                @endguest
+                                @endguest --}}
                             </ul>
                         </div>
                     </nav>
@@ -112,7 +121,7 @@
 
             {{-- Main Content --}}
             <main>
-                <div class="wrapper">
+                <div class="container">
                 @yield('content')
                 </div>
             </main>

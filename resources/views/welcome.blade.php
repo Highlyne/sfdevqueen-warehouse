@@ -77,7 +77,7 @@
                     <div class="col-md-8">
                     <div class="form-group">
                         <!-- Question Block 2 -->
-                        <label>My order arrived in perfect condition.</label>
+                        <label>My order arrived in a timely manner.</label>
                         <select class="form-control select2" name="Q2" style="width: 100%;">
                         <option selected="selected">Please Select One</option>
                         <option value={{1}}>1- Strongly Disagree</option>
@@ -93,7 +93,7 @@
                     <div class="col-md-8">
                     <div class="form-group">
                         <!-- Question Block 3 -->
-                        <label>My order arrived in perfect condition.</label>
+                        <label>The warehouse staff was friendly and helpful.</label>
                         <select class="form-control select2" name="Q3" style="width: 100%;">
                         <option selected="selected">Please Select One</option>
                         <option value={{1}}>1- Strongly Disagree</option>
@@ -109,7 +109,7 @@
                     <div class="col-md-8">
                     <div class="form-group">
                         <!-- Question Block 4 -->
-                        <label>My order arrived in perfect condition.</label>
+                        <label>I will place an order from this location again.</label>
                         <select class="form-control select2" name="Q4" style="width: 100%;">
                         <option selected="selected">Please Select One</option>
                         <option value={{1}}>1- Strongly Disagree</option>
@@ -125,7 +125,7 @@
                     <div class="col-md-8">
                     <div class="form-group">
                         <!-- Question Block 5 -->
-                        <label>My order arrived in perfect condition.</label>
+                        <label>I would reccomend a friend to shop at this location.</label>
                         <select class="form-control select2" name="Q5" style="width: 100%;">
                         <option selected="selected">Please Select One</option>
                         <option value={{1}}>1- Strongly Disagree</option>
@@ -148,7 +148,21 @@
             </div>
             <!-- /.box -->
         </div>
-        </div>                  
-    </section>
+    </div>    
+    <div class="row">
+            <div class="col-sm-12">
+                <div style="margin:20px;" class="box box-default">
+                        <div class="box-header with-border">
+                          <h3 class="box-title">Example</h3>
+                        </div>
+                        <div class="box-body">
+                          Your response will post to the application's table.  The model will sync with the custom Feedback__c Salesforce object.
+                        </div>
+                        <!-- /.box-body -->
+                      </div>
+                      <!-- /.box -->
+            </div>
+        </div>              
+</section>
 
 @endsection
