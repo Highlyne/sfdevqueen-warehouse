@@ -41,7 +41,7 @@ class FeedbackController extends Controller
         $feedback = new Feedback__c;
         
         $feedback->invite_number__c = $request->acctNum;
-        $feedback->name = $request->name;
+        $feedback->name_given__c = $request->name;
         $feedback->customer_email__c = $request->email;
         $feedback->answer_1__c = (int)$request->Q1;
         $feedback->answer_2__c = (int)$request->Q2;

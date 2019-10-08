@@ -16,7 +16,7 @@ class CreateFeedbackTable extends Migration
         Schema::create('feedback__c', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('invite_number__c');
-            $table->string('name');
+            $table->string('name_given__c');
             $table->string('customer_email__c');
             $table->integer('answer_1__c');
             $table->integer('answer_2__c');
