@@ -20,6 +20,7 @@ Route::get('/admin', function () {
 });
 
 Route::post('/survey', 'FeedbackController@store');
+Route::get('/dash', 'FeedbackController@index');
 
 Auth::routes();
 
