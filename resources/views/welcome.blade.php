@@ -13,7 +13,9 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form">
+            <form method="POST" action="/survey" role="form">
+                <!-- CSRF Token // Proctection to ensure submission only comes in from this form -->
+                {{csrf_field() }}
                 <div class="box-body">
                 <div class="row">
                     <div class="col-md-6">
@@ -23,7 +25,7 @@
                         <input
                         type="text"
                         class="form-control"
-                        id="acctNum"
+                        name="acctNum"
                         placeholder="Please provide your customer number"
                         />
                     </div>
@@ -37,7 +39,7 @@
                         <input
                         type="text"
                         class="form-control"
-                        id="name"
+                        name="name"
                         placeholder="Enter Full Name"
                         />
                     </div>
@@ -49,7 +51,7 @@
                         <input
                         type="email"
                         class="form-control"
-                        id="email"
+                        name="email"
                         placeholder="Enter email"
                         />
                     </div>
@@ -60,13 +62,13 @@
                     <div class="form-group">
                         <!-- Question Block 1 -->
                         <label>My order arrived in perfect condition.</label>
-                        <select class="form-control select2" style="width: 100%;">
+                        <select class="form-control select2" name="Q1" style="width: 100%;">
                         <option selected="selected">Please Select One</option>
-                        <option>1- Strongly Disagree</option>
-                        <option>2- Disagree</option>
-                        <option>3- Not Apllicable</option>
-                        <option>4- Agree</option>
-                        <option>5- Strongly Agree</option>
+                        <option value={{1}}>1- Strongly Disagree</option>
+                        <option value={{2}}>2- Disagree</option>
+                        <option value={{3}}>3- Not Apllicable</option>
+                        <option value={{4}}>4- Agree</option>
+                        <option value={{5}}>5- Strongly Agree</option>
                         </select>
                     </div>
                     </div>
@@ -76,13 +78,13 @@
                     <div class="form-group">
                         <!-- Question Block 2 -->
                         <label>My order arrived in perfect condition.</label>
-                        <select class="form-control select2" style="width: 100%;">
+                        <select class="form-control select2" name="Q2" style="width: 100%;">
                         <option selected="selected">Please Select One</option>
-                        <option>1- Strongly Disagree</option>
-                        <option>2- Disagree</option>
-                        <option>3- Not Apllicable</option>
-                        <option>4- Agree</option>
-                        <option>5- Strongly Agree</option>
+                        <option value={{1}}>1- Strongly Disagree</option>
+                        <option value={{2}}>2- Disagree</option>
+                        <option value={{3}}>3- Not Apllicable</option>
+                        <option value={{4}}>4- Agree</option>
+                        <option value={{5}}>5- Strongly Agree</option>
                         </select>
                     </div>
                     </div>
@@ -92,13 +94,13 @@
                     <div class="form-group">
                         <!-- Question Block 3 -->
                         <label>My order arrived in perfect condition.</label>
-                        <select class="form-control select2" style="width: 100%;">
+                        <select class="form-control select2" name="Q3" style="width: 100%;">
                         <option selected="selected">Please Select One</option>
-                        <option>1- Strongly Disagree</option>
-                        <option>2- Disagree</option>
-                        <option>3- Not Apllicable</option>
-                        <option>4- Agree</option>
-                        <option>5- Strongly Agree</option>
+                        <option value={{1}}>1- Strongly Disagree</option>
+                        <option value={{2}}>2- Disagree</option>
+                        <option value={{3}}>3- Not Apllicable</option>
+                        <option value={{4}}>4- Agree</option>
+                        <option value={{5}}>5- Strongly Agree</option>
                         </select>
                     </div>
                     </div>
@@ -108,13 +110,13 @@
                     <div class="form-group">
                         <!-- Question Block 4 -->
                         <label>My order arrived in perfect condition.</label>
-                        <select class="form-control select2" style="width: 100%;">
+                        <select class="form-control select2" name="Q4" style="width: 100%;">
                         <option selected="selected">Please Select One</option>
-                        <option>1- Strongly Disagree</option>
-                        <option>2- Disagree</option>
-                        <option>3- Not Apllicable</option>
-                        <option>4- Agree</option>
-                        <option>5- Strongly Agree</option>
+                        <option value={{1}}>1- Strongly Disagree</option>
+                        <option value={{2}}>2- Disagree</option>
+                        <option value={{3}}>3- Not Apllicable</option>
+                        <option value={{4}}>4- Agree</option>
+                        <option value={{5}}>5- Strongly Agree</option>
                         </select>
                     </div>
                     </div>
@@ -124,19 +126,20 @@
                     <div class="form-group">
                         <!-- Question Block 5 -->
                         <label>My order arrived in perfect condition.</label>
-                        <select class="form-control select2" style="width: 100%;">
+                        <select class="form-control select2" name="Q5" style="width: 100%;">
                         <option selected="selected">Please Select One</option>
-                        <option>1- Strongly Disagree</option>
-                        <option>2- Disagree</option>
-                        <option>3- Not Apllicable</option>
-                        <option>4- Agree</option>
-                        <option>5- Strongly Agree</option>
+                        <option value={{1}}>1- Strongly Disagree</option>
+                        <option value={{2}}>2- Disagree</option>
+                        <option value={{3}}>3- Not Apllicable</option>
+                        <option value={{4}}>4- Agree</option>
+                        <option value={{5}}>5- Strongly Agree</option>
                         </select>
                     </div>
                     </div>
                 </div>
                 </div>
                 <!-- /.box-body -->
+               
         
                 <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Submit</button>

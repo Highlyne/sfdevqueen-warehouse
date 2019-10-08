@@ -19,6 +19,8 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
+Route::post('/survey', 'FeedbackController@store');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
