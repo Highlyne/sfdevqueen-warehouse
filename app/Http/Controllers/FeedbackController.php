@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Feedback;
+use App\Feedback__c;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -38,18 +38,18 @@ class FeedbackController extends Controller
     {
         // If there's a record for the email given update the record.
         // If not, create one.
-        $feedback = new Feedback;
+        $fdback = new Feedback__c;
         
-        $feedback->acctNum = $request->acctNum;
-        $feedback->name = $request->name;
-        $feedback->email = $request->email;
-        $feedback->answer1 = (int)$request->Q1;
-        $feedback->answer2 = (int)$request->Q2;
-        $feedback->answer3 = (int)$request->Q3;
-        $feedback->answer4 = (int)$request->Q4;
-        $feedback->answer5 = (int)$request->Q5;
+        $fdback->acctNum = $request->acctNum;
+        $fdback->name = $request->name;
+        $fdback->email = $request->email;
+        $fdback->answer1 = (int)$request->Q1;
+        $fdback->answer2 = (int)$request->Q2;
+        $fdback->answer3 = (int)$request->Q3;
+        $fdback->answer4 = (int)$request->Q4;
+        $fdback->answer5 = (int)$request->Q5;
 
-        $feedback->save();
+        $fdback->save();
             
         
         return redirect('/');
